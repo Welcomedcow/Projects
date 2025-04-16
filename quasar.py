@@ -11,8 +11,6 @@ Date: Nov 30, 2024
 """
 import random
 random.seed(150)
-import introcs
-
 
 # Do not touch these first two functions. They are finished for you.
 def prompt(prompt,valid):
@@ -100,7 +98,7 @@ def get_bet(credits):
     halted = False
     while not halted:
         make_bet = input('Make a bet: ')
-        if not introcs.isint(make_bet):
+        if not int(make_bet):
             print('The bet must be an integer.')
         elif int(make_bet) <= 0:
             print('The bet must be a positive integer.')
